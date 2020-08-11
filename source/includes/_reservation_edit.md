@@ -8,7 +8,7 @@ This endpoint allows creating a new reservation. Only a subset of reservation an
 require 'init.i.php';
 
 // build reservation
-$reservation = new \Arctic\Model\Reservation\Reservation();
+$reservation = new \Tourbase\Model\Reservation\Reservation();
 $reservation->activity->personid = 73;
 $reservation->tripid = 765;
 $reservation->membercounts = [
@@ -21,7 +21,7 @@ $reservation->insert();
 ```
 
 ```shell
-curl "https://outfitter.arcticres.com/api/rest/reservation"
+curl "https://outfitter.tourbase.com/api/rest/reservation"
   -H "Authorization: Bearer token"
   -H "Content-Type: application/json"
   -d @request.json
@@ -46,7 +46,7 @@ curl "https://outfitter.arcticres.com/api/rest/reservation"
 
 ### HTTP Request
 
-`POST https://outfitter.arcticres.com/api/rest/reservation`
+`POST https://outfitter.tourbase.com/api/rest/reservation`
 
 ### Body Attributes
 
@@ -76,7 +76,7 @@ Once created, reservations can be updated in the same format. Updates can be use
 require 'init.i.php';
 
 // load reservation
-$reservation = \Arctic\Model\Reservation\Reservation::load(690);
+$reservation = \Tourbase\Model\Reservation\Reservation::load(690);
 
 // change information
 $reservation->activity->personid = 44;
@@ -89,7 +89,7 @@ $reservation->update();
 ```
 
 ```shell
-curl "https://outfitter.arcticres.com/api/rest/reservation/690"
+curl "https://outfitter.tourbase.com/api/rest/reservation/690"
   -H "Authorization: Bearer token"
   -H "Content-Type: application/json"
   -X PUT
@@ -113,7 +113,7 @@ curl "https://outfitter.arcticres.com/api/rest/reservation/690"
 
 ### HTTP Request
 
-`PUT https://outfitter.arcticres.com/api/rest/reservation/<id>`
+`PUT https://outfitter.tourbase.com/api/rest/reservation/<id>`
 
 ### URL Parameters
 

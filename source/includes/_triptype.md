@@ -78,7 +78,7 @@
             "setname": "",
             "description": "",
             "showonline": true,
-            "onlinedescription": "Arctic Reservations T-shirt",
+            "onlinedescription": "Tourbase Reservations T-shirt",
             "orimageid": 14,
             "isdefault": false,
             "price": "25.00",
@@ -95,7 +95,7 @@
 }
 ```
 
-The `triptype` object describes an Arctic trip type. Trip types describe a standard itinerary, and are used to create individual trips on the calendar. The trip type defines standard pricing, add-ons and information, which can then be customized on a per-trip basis.
+The `triptype` object describes an Tourbase trip type. Trip types describe a standard itinerary, and are used to create individual trips on the calendar. The trip type defines standard pricing, add-ons and information, which can then be customized on a per-trip basis.
 
 ### Attributes
 

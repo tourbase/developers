@@ -17,7 +17,7 @@
 }
 ```
 
-The `reservation` object describes an Arctic reservation. The reservation contains information about the trip and allocations, while the corresponding `activity` object contains billing and general details.
+The `reservation` object describes an Tourbase reservation. The reservation contains information about the trip and allocations, while the corresponding `activity` object contains billing and general details.
 
 ### Attributes
 

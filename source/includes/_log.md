@@ -12,7 +12,7 @@ require 'init.i.php';
 ```
 
 ```shell
-curl "https://outfitter.arcticres.com/api/rest/log?models=reservation,activity"
+curl "https://outfitter.tourbase.com/api/rest/log?models=reservation,activity"
   -H "Authorization: Bearer token"
   -H "Content-Type: application/json"
 ```
@@ -43,11 +43,11 @@ curl "https://outfitter.arcticres.com/api/rest/log?models=reservation,activity"
             ]
         }
     ],
-    "next": "https://outfitter.arcticres.com/api/rest/log?models=reservation,activity&before_id=34468:6"
+    "next": "https://outfitter.tourbase.com/api/rest/log?models=reservation,activity&before_id=34468:6"
 }
 ```
 
-The `log` response contains an array of log entries describing edits that were made in Arctic Reservations, filtering the results based on the provided query parameters. Log entries allow replaying or analyzing a set of changes. Log entries are available for 14 days, and can be queried in either ascending or descending order. 
+The `log` response contains an array of log entries describing edits that were made in Tourbase Reservations, filtering the results based on the provided query parameters. Log entries allow replaying or analyzing a set of changes. Log entries are available for 14 days, and can be queried in either ascending or descending order. 
 
 Because only a limited number of log entries are available via the API, pagination works differently than the standard implementation in other parts of the API. The API response includes the URL to receive the next page of results.
 

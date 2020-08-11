@@ -7,7 +7,7 @@
     "businessgroupid": 1,
     "parentactivityid": 0,
     "id": 691,
-    "type": "Packages\\Arctic\\Reservation\\Models_Reservation",
+    "type": "Packages\\Tourbase\\Reservation\\Models_Reservation",
     "name": "",
     "start": "2020-04-01 14:00:00",
     "end": "2020-04-01 18:30:00",
@@ -37,7 +37,7 @@
 }
 ```
 
-The `activity` object describes an Arctic activity (reservation or rental). The activity contains generic information about the activity such as the customer, booking agent, group mode details, invoice details, etc.
+The `activity` object describes an Tourbase activity (reservation or rental). The activity contains generic information about the activity such as the customer, booking agent, group mode details, invoice details, etc.
 
 ### Attributes
 

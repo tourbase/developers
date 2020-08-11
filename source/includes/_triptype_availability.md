@@ -1,13 +1,13 @@
 ## Update trip type availability
 
-This endpoint allows you to batch update availability information for a trip type. The request includes an array of trip start dates and times. By default, Arctic will make the necessary changes so that the trip calendar in Arctic matches the provided list of start dates and times, including creating trips, updating openings and canceling trips.
+This endpoint allows you to batch update availability information for a trip type. The request includes an array of trip start dates and times. By default, Tourbase will make the necessary changes so that the trip calendar in Tourbase matches the provided list of start dates and times, including creating trips, updating openings and canceling trips.
 
 ```php
 <?php
 
 require 'init.i.php';
 
-$trip_type = \Arctic\Model\Trip\TripType::load(1);
+$trip_type = \Tourbase\Model\Trip\TripType::load(1);
 $response = $trip_type->updateAvailability([
 	'range' => [
 		'start' => '2019-03-15',
@@ -31,7 +31,7 @@ $response = $trip_type->updateAvailability([
 ```
 
 ```shell
-curl "https://outfitter.arcticres.com/api/rest/triptype/1/availability"
+curl "https://outfitter.tourbase.com/api/rest/triptype/1/availability"
   -H "Authorization: Bearer token"
   -H "Content-Type: application/json"
   -d @request.json
@@ -95,7 +95,7 @@ curl "https://outfitter.arcticres.com/api/rest/triptype/1/availability"
 
 ### HTTP Request
 
-`POST https://outfitter.arcticres.com/api/rest/triptype/<id>/availability`
+`POST https://outfitter.tourbase.com/api/rest/triptype/<id>/availability`
 
 ### URL Parameters
 
@@ -107,9 +107,9 @@ id | int | *required* | The ID of the trip type.
 
 Attribute | Type | Default | Description
 --------- | ---- | ------- | -----------
-create | boolean | `true` | Trip starts in "trips" that do not exist in Arctic should be created.
+create | boolean | `true` | Trip starts in "trips" that do not exist in Tourbase should be created.
 update | boolean | `true` | Trip starts in "trips" that have different availability or notes should be updated.
-cancel | boolean | `true` | Trip starts in Arctic that do not exist in "trips" should be canceled. If any trips have reservations, an alert will appear on the dashboard to notify reservationists.
+cancel | boolean | `true` | Trip starts in Tourbase that do not exist in "trips" should be canceled. If any trips have reservations, an alert will appear on the dashboard to notify reservationists.
 simulate | boolean | `false` | If true, the update will only be simulated. The result object will return the changes that are pending.
 range | object | | By default, the availability update will effect all trips starting now indefinitely into the future.
 trips | array | *required* | An array of "trip" objects.
@@ -138,7 +138,7 @@ The `trip` object can either specifying `openings` or `remainingopenings`, but n
 
 ### Response Attributes
 
-The response has a result array where each entry specifies what action was taken for the provided list of trip start dates and times. Additional result entries will be added for trips that existed in Arctic, but were not in the provided list, and as a result were canceled.
+The response has a result array where each entry specifies what action was taken for the provided list of trip start dates and times. Additional result entries will be added for trips that existed in Tourbase, but were not in the provided list, and as a result were canceled.
 
 Attribute | Type | Description
 --------- | ---- | -----------

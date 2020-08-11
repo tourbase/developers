@@ -7,12 +7,12 @@ This endpoint allows updating the status for the activity, marking it as cancele
 
 require 'init.i.php';
 
-$activity = \Arctic\Model\Activity\Activity::load(601);
+$activity = \Tourbase\Model\Activity\Activity::load(601);
 $activity->setStatus('canceled');
 ```
 
 ```shell
-curl "https://outfitter.arcticres.com/api/rest/activity/601/status"
+curl "https://outfitter.tourbase.com/api/rest/activity/601/status"
   -H "Authorization: Bearer token"
   -H "Content-Type: application/json"
   -d @request.json
@@ -32,7 +32,7 @@ curl "https://outfitter.arcticres.com/api/rest/activity/601/status"
 
 ### HTTP Request
 
-`POST https://outfitter.arcticres.com/api/rest/activity/<id>/status`
+`POST https://outfitter.tourbase.com/api/rest/activity/<id>/status`
 
 ### URL Parameters
 

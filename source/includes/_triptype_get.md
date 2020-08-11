@@ -7,11 +7,11 @@ You can fetch a specific trip type object by ID.
 
 require 'init.i.php';
 
-$trip_type = \Arctic\Model\Trip\TripType::load(1);
+$trip_type = \Tourbase\Model\Trip\TripType::load(1);
 ```
 
 ```shell
-curl "https://outfitter.arcticres.com/api/rest/triptype/1"
+curl "https://outfitter.tourbase.com/api/rest/triptype/1"
   -H "Authorization: Bearer token"
 ```
 
@@ -19,7 +19,7 @@ curl "https://outfitter.arcticres.com/api/rest/triptype/1"
 
 ### HTTP Request
 
-`GET https://outfitter.arcticres.com/api/rest/triptype/<id>`
+`GET https://outfitter.tourbase.com/api/rest/triptype/<id>`
 
 ### URL Parameters
 

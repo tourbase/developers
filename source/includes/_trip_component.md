@@ -12,7 +12,7 @@
 	"setname": "",
 	"description": "",
 	"showonline": true,
-	"onlinedescription": "Arctic Reservations T-shirt",
+	"onlinedescription": "Tourbase Reservations T-shirt",
 	"orimageid": 14,
 	"isdefault": false,
 	"price": "25.00",
