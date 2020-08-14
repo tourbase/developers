@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>API Reference</title>
 
-    <style media="screen">
+    <style>
       .highlight table td { padding: 5px; }
 .highlight table pre { margin: 0; }
 .highlight .gh {
@@ -146,36 +146,47 @@
 }
 .highlight .vc {
   color: #ffffff;
+  background-color: #272822;
 }
 .highlight .nn {
   color: #ffffff;
+  background-color: #272822;
+}
+.highlight .nl {
+  color: #ffffff;
+  background-color: #272822;
 }
 .highlight .ni {
   color: #ffffff;
+  background-color: #272822;
 }
 .highlight .bp {
   color: #ffffff;
+  background-color: #272822;
 }
 .highlight .vg {
   color: #ffffff;
+  background-color: #272822;
 }
 .highlight .vi {
   color: #ffffff;
+  background-color: #272822;
 }
 .highlight .nv, .highlight .vm {
   color: #ffffff;
+  background-color: #272822;
 }
 .highlight .w {
   color: #ffffff;
+  background-color: #272822;
 }
 .highlight {
   color: #ffffff;
+  background-color: #272822;
 }
 .highlight .n, .highlight .py, .highlight .nx {
   color: #ffffff;
-}
-.highlight .nl {
-  color: #f92672;
+  background-color: #272822;
 }
 .highlight .ow {
   color: #f92672;
@@ -196,99 +207,12 @@
   color: #f92672;
 }
     </style>
-    <style media="print">
-      * {
-        -webkit-transition:none!important;
-        transition:none!important;
-      }
-      .highlight table td { padding: 5px; }
-.highlight table pre { margin: 0; }
-.highlight, .highlight .w {
-  color: #586e75;
-}
-.highlight .err {
-  color: #002b36;
-  background-color: #dc322f;
-}
-.highlight .c, .highlight .ch, .highlight .cd, .highlight .cm, .highlight .cpf, .highlight .c1, .highlight .cs {
-  color: #657b83;
-}
-.highlight .cp {
-  color: #b58900;
-}
-.highlight .nt {
-  color: #b58900;
-}
-.highlight .o, .highlight .ow {
-  color: #93a1a1;
-}
-.highlight .p, .highlight .pi {
-  color: #93a1a1;
-}
-.highlight .gi {
-  color: #859900;
-}
-.highlight .gd {
-  color: #dc322f;
-}
-.highlight .gh {
-  color: #268bd2;
-  background-color: #002b36;
-  font-weight: bold;
-}
-.highlight .k, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kv {
-  color: #6c71c4;
-}
-.highlight .kc {
-  color: #cb4b16;
-}
-.highlight .kt {
-  color: #cb4b16;
-}
-.highlight .kd {
-  color: #cb4b16;
-}
-.highlight .s, .highlight .sa, .highlight .sb, .highlight .sc, .highlight .dl, .highlight .sd, .highlight .s2, .highlight .sh, .highlight .sx, .highlight .s1 {
-  color: #859900;
-}
-.highlight .sr {
-  color: #2aa198;
-}
-.highlight .si {
-  color: #d33682;
-}
-.highlight .se {
-  color: #d33682;
-}
-.highlight .nn {
-  color: #b58900;
-}
-.highlight .nc {
-  color: #b58900;
-}
-.highlight .no {
-  color: #b58900;
-}
-.highlight .na {
-  color: #268bd2;
-}
-.highlight .m, .highlight .mb, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .il, .highlight .mo, .highlight .mx {
-  color: #859900;
-}
-.highlight .ss {
-  color: #859900;
-}
-    </style>
-    <link href="stylesheets/screen-c9d8fa83.css" rel="stylesheet" media="screen" />
-    <link href="stylesheets/print-953e3353.css" rel="stylesheet" media="print" />
-      <script src="javascripts/all-e9bde216.js"></script>
-
-    <script>
-      $(function() { setupCodeCopy(); });
-    </script>
+    <link href="stylesheets/screen-181ae993.css" rel="stylesheet" media="screen" />
+    <link href="stylesheets/print-c427a123.css" rel="stylesheet" media="print" />
+      <script src="javascripts/all-c5541673.js"></script>
   </head>
 
-  <body class="index" data-languages="[&quot;shell&quot;,&quot;ruby&quot;,&quot;python&quot;,&quot;javascript&quot;]">
+  <body class="index" data-languages="[&quot;php&quot;,&quot;shell&quot;]">
     <a href="#" id="nav-button">
       <span>
         NAV
@@ -296,12 +220,10 @@
       </span>
     </a>
     <div class="toc-wrapper">
-      <img src="images/logo-1e815a84.png" class="logo" alt="" />
+      <img src="images/logo-66aa03e7.png" class="logo" alt="" />
         <div class="lang-selector">
+              <a href="#" data-language-name="php">php</a>
               <a href="#" data-language-name="shell">shell</a>
-              <a href="#" data-language-name="ruby">ruby</a>
-              <a href="#" data-language-name="python">python</a>
-              <a href="#" data-language-name="javascript">javascript</a>
         </div>
         <div class="search">
           <input type="text" class="search" id="input-search" placeholder="Search">
@@ -312,279 +234,1528 @@
             <a href="#introduction" class="toc-h1 toc-link" data-title="Introduction">Introduction</a>
           </li>
           <li>
-            <a href="#authentication" class="toc-h1 toc-link" data-title="Authentication">Authentication</a>
-          </li>
-          <li>
-            <a href="#kittens" class="toc-h1 toc-link" data-title="Kittens">Kittens</a>
+            <a href="#accounting" class="toc-h1 toc-link" data-title="Accounting">Accounting</a>
               <ul class="toc-list-h2">
                   <li>
-                    <a href="#get-all-kittens" class="toc-h2 toc-link" data-title="Get All Kittens">Get All Kittens</a>
+                    <a href="#accounting-sale-object" class="toc-h2 toc-link" data-title="Accounting sale object">Accounting sale object</a>
                   </li>
                   <li>
-                    <a href="#get-a-specific-kitten" class="toc-h2 toc-link" data-title="Get a Specific Kitten">Get a Specific Kitten</a>
-                  </li>
-                  <li>
-                    <a href="#delete-a-specific-kitten" class="toc-h2 toc-link" data-title="Delete a Specific Kitten">Delete a Specific Kitten</a>
+                    <a href="#accounting-transaction-object" class="toc-h2 toc-link" data-title="Accounting transaction object">Accounting transaction object</a>
                   </li>
               </ul>
           </li>
           <li>
-            <a href="#errors" class="toc-h1 toc-link" data-title="Errors">Errors</a>
+            <a href="#activity" class="toc-h1 toc-link" data-title="Activity">Activity</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#activity-object" class="toc-h2 toc-link" data-title="Activity object">Activity object</a>
+                  </li>
+                  <li>
+                    <a href="#update-activity-status" class="toc-h2 toc-link" data-title="Update activity status">Update activity status</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#reservation" class="toc-h1 toc-link" data-title="Reservation">Reservation</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#reservation-object" class="toc-h2 toc-link" data-title="Reservation object">Reservation object</a>
+                  </li>
+                  <li>
+                    <a href="#reservation-member-object" class="toc-h2 toc-link" data-title="Reservation member object">Reservation member object</a>
+                  </li>
+                  <li>
+                    <a href="#create-reservation" class="toc-h2 toc-link" data-title="Create reservation">Create reservation</a>
+                  </li>
+                  <li>
+                    <a href="#update-reservation" class="toc-h2 toc-link" data-title="Update reservation">Update reservation</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#trip-type" class="toc-h1 toc-link" data-title="Trip type">Trip type</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#trip-type-object" class="toc-h2 toc-link" data-title="Trip type object">Trip type object</a>
+                  </li>
+                  <li>
+                    <a href="#get-trip-type-object" class="toc-h2 toc-link" data-title="Get trip type object">Get trip type object</a>
+                  </li>
+                  <li>
+                    <a href="#update-trip-type-availability" class="toc-h2 toc-link" data-title="Update trip type availability">Update trip type availability</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#log" class="toc-h1 toc-link" data-title="Log">Log</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#query-log-entries" class="toc-h2 toc-link" data-title="Query log entries">Query log entries</a>
+                  </li>
+                  <li>
+                    <a href="#log-entry-object" class="toc-h2 toc-link" data-title="Log entry object">Log entry object</a>
+                  </li>
+              </ul>
           </li>
       </ul>
         <ul class="toc-footer">
-            <li><a href='#'>Sign Up for a Developer Key</a></li>
-            <li><a href='https://github.com/slatedocs/slate'>Documentation Powered by Slate</a></li>
+            <li><a href='https://tourbase.github.io/developers/'>PHP Framework</a></li>
+            <li><a href='https://github.com/lord/slate'>Documentation Powered by Slate</a></li>
         </ul>
     </div>
     <div class="page-wrapper">
       <div class="dark-box"></div>
       <div class="content">
         <h1 id='introduction'>Introduction</h1>
-<p>Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.</p>
+<p>Tourbase Reservations offers a REST API that allows reading and writing information from installations. You can use the API to connect third party software, develop custom tools or build additional website integration.</p>
 
-<p>We have language bindings in Shell, Ruby, Python, and JavaScript! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.</p>
+<p>We have a flexible <a href="https://github.com/tourbase/arctic-api">PHP implementation of the API</a>, but the documentation provides more general instructions should you want to implement a custom implementation or use a different language.</p>
 
-<p>This example API documentation page was created with <a href="https://github.com/slatedocs/slate">Slate</a>. Feel free to edit it and use it as a base for your own API&#39;s documentation.</p>
-<h1 id='authentication'>Authentication</h1>
-<blockquote>
-<p>To authorize, use this code:</p>
-</blockquote>
-<div class="highlight"><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
-</code></pre></div><div class="highlight"><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="p">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-</code></pre></div><div class="highlight"><pre class="highlight shell tab-shell"><code><span class="c"># With shell, you can just pass the correct header with each request</span>
-curl <span class="s2">"api_endpoint_here"</span>
-  <span class="nt">-H</span> <span class="s2">"Authorization: meowmeowmeow"</span>
-</code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="kd">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">kittn</span><span class="dl">'</span><span class="p">);</span>
-
-<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="dl">'</span><span class="s1">meowmeowmeow</span><span class="dl">'</span><span class="p">);</span>
-</code></pre></div>
-<blockquote>
-<p>Make sure to replace <code>meowmeowmeow</code> with your API key.</p>
-</blockquote>
-
-<p>Kittn uses API keys to allow access to the API. You can register a new Kittn API key at our <a href="http://example.com/developers">developer portal</a>.</p>
-
-<p>Kittn expects for the API key to be included in all API requests to the server in a header that looks like the following:</p>
-
-<p><code>Authorization: meowmeowmeow</code></p>
-
-<aside class="notice">
-You must replace <code>meowmeowmeow</code> with your personal API key.
-</aside>
-<h1 id='kittens'>Kittens</h1><h2 id='get-all-kittens'>Get All Kittens</h2><div class="highlight"><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">get</span>
-</code></pre></div><div class="highlight"><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="p">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="p">.</span><span class="n">kittens</span><span class="p">.</span><span class="n">get</span><span class="p">()</span>
-</code></pre></div><div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://example.com/api/kittens"</span>
-  <span class="nt">-H</span> <span class="s2">"Authorization: meowmeowmeow"</span>
-</code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="kd">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">kittn</span><span class="dl">'</span><span class="p">);</span>
-
-<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="dl">'</span><span class="s1">meowmeowmeow</span><span class="dl">'</span><span class="p">);</span>
-<span class="kd">let</span> <span class="nx">kittens</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="kd">get</span><span class="p">();</span>
-</code></pre></div>
-<blockquote>
-<p>The above command returns JSON structured like this:</p>
-</blockquote>
-<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
-  </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Fluffums"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"calico"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">6</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">7</span><span class="w">
-  </span><span class="p">},</span><span class="w">
-  </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Max"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"unknown"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="w">
-  </span><span class="p">}</span><span class="w">
-</span><span class="p">]</span><span class="w">
+<p>This documentation is a new project, and is in the early stages. More information will be added soon.</p>
+<h1 id='accounting'>Accounting</h1><h2 id='accounting-sale-object'>Accounting sale object</h2><div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"invoiceitemgroupid"</span><span class="p">:</span><span class="w"> </span><span class="mi">882</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">4235</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"accountid"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"businessgroupid"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"amount"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.14"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"accrualdate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-04-22"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"time"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-04-22 21:10:20"</span><span class="w">
+</span><span class="p">}</span><span class="w">
 </span></code></pre></div>
-<p>This endpoint retrieves all kittens.</p>
+<p>The <code>accountingsale</code> object describes a line item that was added / removed to an invoice, irrespective of whether any transactions have taken place. For example, positive amounts indicate a line item or charge were added to an invoice (e.g., a guest booked an activity), while negative amounts indicate a line item or charge was removed from an invoice (e.g., an activity was canceled or a discount was added).</p>
+
+<p><strong>Note:</strong> Accounting records do not change. After an entry is added, it will not change or be deleted. If subsequent accounting changes are made, new entries will be added to make the appropriate adjustments.</p>
+<h3 id='attributes'>Attributes</h3>
+<p>The response returns a trip type object. </p>
+
+<table><thead>
+<tr>
+<th>Attribute</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>invoiceitemgroupid</td>
+<td>int</td>
+<td>The invoice group (section) that produced the line item.</td>
+</tr>
+<tr>
+<td>id</td>
+<td>int</td>
+<td>A unique ID for the accounting sale.</td>
+</tr>
+<tr>
+<td>accountid</td>
+<td>int</td>
+<td>The account ID for the line item.</td>
+</tr>
+<tr>
+<td>businessgroupid</td>
+<td>int</td>
+<td>The business group ID for the line item. Will correspond with activity business group in most cases.</td>
+</tr>
+<tr>
+<td>amount</td>
+<td>decimal</td>
+<td>String representation of amount.</td>
+</tr>
+<tr>
+<td>accrualdate</td>
+<td>date</td>
+<td>The accrual date for the charge. Will correspond with activity start date if associated with an activity.</td>
+</tr>
+<tr>
+<td>time</td>
+<td>datetime</td>
+<td>The date and time when the adjustment was made.</td>
+</tr>
+</tbody></table>
+<h2 id='accounting-transaction-object'>Accounting transaction object</h2><div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"transactionid"</span><span class="p">:</span><span class="w"> </span><span class="mi">398</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">630</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"accountid"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"businessgroupid"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"transactiondate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-03-05 16:30:57"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"accrualdate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-03-05"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"amount"</span><span class="p">:</span><span class="w"> </span><span class="s2">"7.25"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"exported"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"reportid"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"createdon"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-04-18 19:25:24"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<p>The <code>accountingtransaction</code> object describes how income was allocate towards previous line item charges (see <a href="#accounting-sale-object">line item API details</a> for more details). That is, when a transaction occurs (payment or refund), the income will be applied to or credited from the line items on the invoice, generating new accounting transaction records.</p>
+
+<p><strong>Note:</strong> Accounting records do not change. After an entry is added, it will not change or be deleted. If subsequent accounting changes are made, new entries will be added to make the appropriate adjustments.</p>
+<h3 id='attributes'>Attributes</h3>
+<p>The response returns a trip type object. </p>
+
+<table><thead>
+<tr>
+<th>Attribute</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>transactionid</td>
+<td>int</td>
+<td>The transaction ID that is being applied.</td>
+</tr>
+<tr>
+<td>id</td>
+<td>int</td>
+<td>A unique ID for the accounting transaction.</td>
+</tr>
+<tr>
+<td>accountid</td>
+<td>int</td>
+<td>The account ID that the income is being applied to / credited from.</td>
+</tr>
+<tr>
+<td>businessgroupid</td>
+<td>int</td>
+<td>The business group ID the income is being applied to / credited from. Will correspond with activity business group in most cases.</td>
+</tr>
+<tr>
+<td>transactiondate</td>
+<td>datetime</td>
+<td>The date and time that the transaction was processed.</td>
+</tr>
+<tr>
+<td>accrualdate</td>
+<td>date</td>
+<td>The accrual date for the charge. Will correspond with activity start date if associated with an activity.</td>
+</tr>
+<tr>
+<td>amount</td>
+<td>decimal</td>
+<td>String representation of amount.</td>
+</tr>
+<tr>
+<td>exported</td>
+<td>boolean</td>
+<td>Whether or not the entry has been exported via the end of day balance report.</td>
+</tr>
+<tr>
+<td>reportid</td>
+<td>int</td>
+<td>The ID of the end of day balance report where this allocation appeared.</td>
+</tr>
+<tr>
+<td>createdon</td>
+<td>datetime</td>
+<td>The date and time when the allocation was made.</td>
+</tr>
+</tbody></table>
+<h1 id='activity'>Activity</h1><h2 id='activity-object'>Activity object</h2><div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"businessgroupid"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"parentactivityid"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">691</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Packages</span><span class="se">\\</span><span class="s2">Tourbase</span><span class="se">\\</span><span class="s2">Reservation</span><span class="se">\\</span><span class="s2">Models_Reservation"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"start"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-04-01 14:00:00"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"end"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-04-01 18:30:00"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"personid"</span><span class="p">:</span><span class="w"> </span><span class="mi">73</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"bookingagentid"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"invoiceid"</span><span class="p">:</span><span class="w"> </span><span class="mi">712</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"invoiceitemgroupid"</span><span class="p">:</span><span class="w"> </span><span class="mi">917</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"packageid"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"isgroup"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"groupname"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"groupmode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"burstable"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"groupinvoice"</span><span class="p">:</span><span class="w"> </span><span class="s2">"separate"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"grouppricing"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"groupholds"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"groupholdsexpire"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"madeonline"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"source"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"promocode"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"canceled"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"createdon"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-12-24 15:19:53"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"modifiedon"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-12-24 15:28:41"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"createdbyuserid"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"deleted"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"manageurl"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http:</span><span class="se">\/\/</span><span class="s2">reservations.rafting</span><span class="se">\/</span><span class="s2">g</span><span class="se">\/</span><span class="s2">AEkAX-w-ljgKiYPu</span><span class="se">\/</span><span class="s2">manage</span><span class="se">\/</span><span class="s2">A691"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"holduntil"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"subactivities"</span><span class="p">:</span><span class="w"> </span><span class="p">[]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<p>The <code>activity</code> object describes an Tourbase activity (reservation or rental). The activity contains generic information about the activity such as the customer, booking agent, group mode details, invoice details, etc.</p>
+<h3 id='attributes'>Attributes</h3>
+<p>The response returns an activity object. </p>
+
+<table><thead>
+<tr>
+<th>Attribute</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>businessgroupid</td>
+<td>int</td>
+<td>The business group that contains the activity.</td>
+</tr>
+<tr>
+<td>parentactivityid</td>
+<td>int</td>
+<td>If this activity is part of a group, the ID of the group activity.</td>
+</tr>
+<tr>
+<td>id</td>
+<td>int</td>
+<td>A unique ID for the activity.</td>
+</tr>
+<tr>
+<td>type</td>
+<td>string</td>
+<td>A unique identifier for the type of activity.</td>
+</tr>
+<tr>
+<td>name</td>
+<td>string</td>
+<td>Unused.</td>
+</tr>
+<tr>
+<td>start</td>
+<td>datetime</td>
+<td>The date and time the activity begins.</td>
+</tr>
+<tr>
+<td>end</td>
+<td>datetime</td>
+<td>The date and time the activity ends.</td>
+</tr>
+<tr>
+<td>personid</td>
+<td>int</td>
+<td>The ID of the person who is the primary customer.</td>
+</tr>
+<tr>
+<td>bookingagentid</td>
+<td>int</td>
+<td>The ID of the person who is the booking agent.</td>
+</tr>
+<tr>
+<td>invoiceid</td>
+<td>int</td>
+<td>The ID of the invoice.</td>
+</tr>
+<tr>
+<td>invoiceitemgroupid</td>
+<td>int</td>
+<td>The ID of the invoice section containing all relevant charges.</td>
+</tr>
+<tr>
+<td>packageid</td>
+<td>int</td>
+<td>If this activity is part of a package, the ID of the type of package.</td>
+</tr>
+<tr>
+<td>isgroup</td>
+<td>bool</td>
+<td>If the activity is a group mode activity.</td>
+</tr>
+<tr>
+<td>groupname</td>
+<td>string</td>
+<td>The name of the group (used for searching).</td>
+</tr>
+<tr>
+<td>groupmode</td>
+<td>string</td>
+<td>Either &quot;burstable&quot; or &quot;fixed&quot; depending on whether the group can grow to accomodate more guests.</td>
+</tr>
+<tr>
+<td>groupinvoice</td>
+<td>string</td>
+<td>Either &quot;separate&quot; or &quot;shared&quot; depending on whether reservations within the group get separate or shared invoices.</td>
+</tr>
+<tr>
+<td>grouppricing</td>
+<td>array or null</td>
+<td>Pricing overrides of the group.</td>
+</tr>
+<tr>
+<td>groupholds</td>
+<td>array or null</td>
+<td>Allocations being held for the group.</td>
+</tr>
+<tr>
+<td>groupholdsexpire</td>
+<td>date or null</td>
+<td>The date the group holds will be released.</td>
+</tr>
+<tr>
+<td>madeonline</td>
+<td>bool</td>
+<td>Whether the reservation was made online.</td>
+</tr>
+<tr>
+<td>source</td>
+<td>string</td>
+<td>The referral source for the activity.</td>
+</tr>
+<tr>
+<td>promocode</td>
+<td>string</td>
+<td>The promocodes applied to the activity.</td>
+</tr>
+<tr>
+<td>status</td>
+<td>string</td>
+<td>The activity status (&quot;pending&quot;, &quot;unfinished&quot;, &quot;finished&quot;, &quot;over&quot;, &quot;canceled&quot;, &quot;noshow&quot;).</td>
+</tr>
+<tr>
+<td>createdon</td>
+<td>datetime</td>
+<td>The creation date.</td>
+</tr>
+<tr>
+<td>modifiedon</td>
+<td>datetime</td>
+<td>The modified date.</td>
+</tr>
+<tr>
+<td>createdbyuserid</td>
+<td>int</td>
+<td>The user ID who created the reservation.</td>
+</tr>
+<tr>
+<td>deleted</td>
+<td>bool</td>
+<td>If the trip type was deleted.</td>
+</tr>
+<tr>
+<td>manageurl</td>
+<td>url</td>
+<td>(Optional.) A personalized URL for the guest to manage the activity.</td>
+</tr>
+<tr>
+<td>holduntil</td>
+<td>date or null</td>
+<td>The date at which the activity will expire if no payment has been received.</td>
+</tr>
+</tbody></table>
+<h2 id='update-activity-status'>Update activity status</h2>
+<p>This endpoint allows updating the status for the activity, marking it as canceled, no-show, or active. When canceling or marking an activity as no-show, a cancellation fee and credit properties can also be specified.</p>
+<div class="highlight"><pre class="highlight php tab-php"><code><span class="cp">&lt;?php</span>
+
+<span class="k">require</span> <span class="s1">'init.i.php'</span><span class="p">;</span>
+
+<span class="nv">$activity</span> <span class="o">=</span> <span class="nx">\Tourbase\Model\Activity\Activity</span><span class="o">::</span><span class="na">load</span><span class="p">(</span><span class="mi">601</span><span class="p">);</span>
+<span class="nv">$activity</span><span class="o">-&gt;</span><span class="na">setStatus</span><span class="p">(</span><span class="s1">'canceled'</span><span class="p">);</span>
+</code></pre></div><div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://outfitter.tourbase.com/api/rest/activity/601/status"</span>
+  <span class="nt">-H</span> <span class="s2">"Authorization: Bearer token"</span>
+  <span class="nt">-H</span> <span class="s2">"Content-Type: application/json"</span>
+  <span class="nt">-d</span> @request.json
+</code></pre></div>
+<blockquote>
+<p>The status function takes a JSON payload. For example:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"canceled"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"cancellation_fee"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"preserve_commissions"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>The above request will return an updated activity object.</p>
+</blockquote>
 <h3 id='http-request'>HTTP Request</h3>
-<p><code>GET http://example.com/api/kittens</code></p>
-<h3 id='query-parameters'>Query Parameters</h3>
+<p><code>POST https://outfitter.tourbase.com/api/rest/activity/&lt;id&gt;/status</code></p>
+<h3 id='url-parameters'>URL Parameters</h3>
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Default</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>include_cats</td>
-<td>false</td>
-<td>If set to true, the result will also include cats.</td>
+<td>id</td>
+<td>int</td>
+<td><em>required</em></td>
+<td>The ID of the activity.</td>
+</tr>
+</tbody></table>
+<h3 id='body-attributes'>Body Attributes</h3>
+<table><thead>
+<tr>
+<th>Attribute</th>
+<th>Type</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>status</td>
+<td>boolean</td>
+<td><em>required</em></td>
+<td>The desired status: &quot;active&quot;, &quot;canceled&quot;, &quot;noshow&quot;.</td>
 </tr>
 <tr>
-<td>available</td>
-<td>true</td>
-<td>If set to false, the result will include kittens that have already been adopted.</td>
+<td>cancellation_fee</td>
+<td>number</td>
+<td><code>null</code></td>
+<td>The cancellation fee to assess (when canceling or marking an activity as no-show).</td>
+</tr>
+<tr>
+<td>preserve_commissions</td>
+<td>bool</td>
+<td><code>false</code></td>
+<td>Whether or not booking agent commissions should apply to the cancellation fee (when canceling or marking an activity as no-show).</td>
+</tr>
+</tbody></table>
+<h3 id='response'>Response</h3>
+<p>Upon success, the response is an updated activity object reflecting the change in status. If the status can not be changed, an HTTP error response will be returned along with a standard error object describing why the change could not be made.</p>
+<h1 id='reservation'>Reservation</h1><h2 id='reservation-object'>Reservation object</h2><div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"activityid"</span><span class="p">:</span><span class="w"> </span><span class="mi">691</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"tripid"</span><span class="p">:</span><span class="w"> </span><span class="mi">765</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"allocations"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mi">482</span><span class="p">],</span><span class="w">
+    </span><span class="nl">"components"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
+    </span><span class="nl">"groupguests"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"registrationupdatedon"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"registrationcomplete"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"deleted"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"guests"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"members"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="err">...</span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<p>The <code>reservation</code> object describes an Tourbase reservation. The reservation contains information about the trip and allocations, while the corresponding <code>activity</code> object contains billing and general details.</p>
+<h3 id='attributes'>Attributes</h3>
+<p>The response returns a reservation object. </p>
+
+<table><thead>
+<tr>
+<th>Attribute</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>activity</td>
+<td>int</td>
+<td>A unique ID for the reservation.</td>
+</tr>
+<tr>
+<td>tripid</td>
+<td>int</td>
+<td>The trip that the reservation is on.</td>
+</tr>
+<tr>
+<td>allocations</td>
+<td>array</td>
+<td>Allocations for the reservation.</td>
+</tr>
+<tr>
+<td>components</td>
+<td>array</td>
+<td>List of reservation level components (add-ons).</td>
+</tr>
+<tr>
+<td>groupguests</td>
+<td>int</td>
+<td>The number of guests in the group (if a group mode reservation).</td>
+</tr>
+<tr>
+<td>registrationupdatedon</td>
+<td>datetime or null</td>
+<td>The date and time the registration details were updated.</td>
+</tr>
+<tr>
+<td>registrationcomplete</td>
+<td>bool</td>
+<td>Whether or not reservation registration is complete.</td>
+</tr>
+<tr>
+<td>deleted</td>
+<td>bool</td>
+<td>If the trip type was deleted.</td>
+</tr>
+<tr>
+<td>guests</td>
+<td>int</td>
+<td>The number of guests in the reservations.</td>
+</tr>
+<tr>
+<td>members</td>
+<td>array</td>
+<td>An array of <a href="#reservation-member-object">member (guest) objects</a>.</td>
+</tr>
+</tbody></table>
+<h2 id='reservation-member-object'>Reservation member object</h2><div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"activityid"</span><span class="p">:</span><span class="w"> </span><span class="mi">691</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1150</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"personid"</span><span class="p">:</span><span class="w"> </span><span class="mi">73</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"pricingleveluniquename"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Adult"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"pricinglevelname"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Adult"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"pricinglevelcost"</span><span class="p">:</span><span class="w"> </span><span class="s2">"85.00"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"components"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
+  </span><span class="nl">"registrationupdatedon"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"registrationcomplete"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"registrationby"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"createdon"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-12-24 15:19:53"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"modifiedon"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-12-24 15:19:53"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"createdbyuserid"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"deleted"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<p>The <code>member</code> object describes one guest in a reservation.</p>
+<h3 id='attributes'>Attributes</h3>
+<p>The response returns a trip type object. </p>
+
+<table><thead>
+<tr>
+<th>Attribute</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>activityid</td>
+<td>int</td>
+<td>The ID of the activity / reservation.</td>
+</tr>
+<tr>
+<td>id</td>
+<td>int</td>
+<td>A unique ID for the pricing level.</td>
+</tr>
+<tr>
+<td>personid</td>
+<td>int</td>
+<td>The ID of the person, if specified.</td>
+</tr>
+<tr>
+<td>pricingleveluniquename</td>
+<td>string</td>
+<td>The pricing level unique name. (See the <a href="#trip-pricing-level-object">pricing level objects</a>.)</td>
+</tr>
+<tr>
+<td>pricinglevelname</td>
+<td>string</td>
+<td>The pricing level name.</td>
+</tr>
+<tr>
+<td>pricinglevelcost</td>
+<td>number</td>
+<td>The pricing level price.</td>
+</tr>
+<tr>
+<td>components</td>
+<td>array</td>
+<td>List of guest level components (add-ons).</td>
+</tr>
+<tr>
+<td>registrationupdatedon</td>
+<td>datetime or null</td>
+<td>The date and time the registration details were updated.</td>
+</tr>
+<tr>
+<td>registrationcomplete</td>
+<td>bool</td>
+<td>Whether or not guest registration is complete.</td>
+</tr>
+<tr>
+<td>registrationby</td>
+<td>string</td>
+<td>Who completed the registration (determines who can see / edit it).</td>
+</tr>
+<tr>
+<td>createdon</td>
+<td>datetime</td>
+<td>The creation date.</td>
+</tr>
+<tr>
+<td>modifiedon</td>
+<td>datetime</td>
+<td>The modified date.</td>
+</tr>
+<tr>
+<td>createdbyuserid</td>
+<td>int</td>
+<td>The user ID who created the reservation.</td>
+</tr>
+<tr>
+<td>deleted</td>
+<td>bool</td>
+<td>If the pricing level was deleted.</td>
+</tr>
+</tbody></table>
+<h2 id='create-reservation'>Create reservation</h2>
+<p>This endpoint allows creating a new reservation. Only a subset of reservation and activity fields can be specified, and often only a smaller subset need to be specified.</p>
+<div class="highlight"><pre class="highlight php tab-php"><code><span class="cp">&lt;?php</span>
+
+<span class="k">require</span> <span class="s1">'init.i.php'</span><span class="p">;</span>
+
+<span class="c1">// build reservation</span>
+<span class="nv">$reservation</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">\Tourbase\Model\Reservation\Reservation</span><span class="p">();</span>
+<span class="nv">$reservation</span><span class="o">-&gt;</span><span class="na">activity</span><span class="o">-&gt;</span><span class="na">personid</span> <span class="o">=</span> <span class="mi">73</span><span class="p">;</span>
+<span class="nv">$reservation</span><span class="o">-&gt;</span><span class="na">tripid</span> <span class="o">=</span> <span class="mi">765</span><span class="p">;</span>
+<span class="nv">$reservation</span><span class="o">-&gt;</span><span class="na">membercounts</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s1">'Adult'</span> <span class="o">=&gt;</span> <span class="mi">2</span><span class="p">,</span>
+    <span class="s1">'Youth'</span> <span class="o">=&gt;</span> <span class="mi">1</span>
+<span class="p">];</span>
+
+<span class="c1">// insert the reservation</span>
+<span class="nv">$reservation</span><span class="o">-&gt;</span><span class="na">insert</span><span class="p">();</span>
+</code></pre></div><div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://outfitter.tourbase.com/api/rest/reservation"</span>
+  <span class="nt">-H</span> <span class="s2">"Authorization: Bearer token"</span>
+  <span class="nt">-H</span> <span class="s2">"Content-Type: application/json"</span>
+  <span class="nt">-d</span> @request.json
+</code></pre></div>
+<blockquote>
+<p>The create function takes a JSON payload. For example:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"tripid"</span><span class="p">:</span><span class="w"> </span><span class="mi">765</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"membercounts"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"Adult"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"Youth"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nl">"activity"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"personid"</span><span class="p">:</span><span class="w"> </span><span class="mi">73</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>The above request will return the new reservation object object.</p>
+</blockquote>
+<h3 id='http-request'>HTTP Request</h3>
+<p><code>POST https://outfitter.tourbase.com/api/rest/reservation</code></p>
+<h3 id='body-attributes'>Body Attributes</h3>
+<p>The response body can include properties of the <a href="#reservation-object">reservation object</a>, as well as the following additional attributes:</p>
+
+<table><thead>
+<tr>
+<th>Attribute</th>
+<th>Type</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>activity</td>
+<td>object</td>
+<td><code>{}</code></td>
+<td>The activity details. See the <a href="#activity-object">activity object</a> for properties. Must include and specify <code>personid</code> property when creating a reservation.</td>
+</tr>
+<tr>
+<td>members</td>
+<td>array</td>
+<td></td>
+<td>An array of members (guests). See the <a href="#reservation-member-object">reservation member object</a> for properties.</td>
+</tr>
+<tr>
+<td>membercounts</td>
+<td>object</td>
+<td><code>{}</code></td>
+<td>Rather than specifying individual members (guests), you can specify an associative array where the keys are pricing levels (either pricing level name or unique name) and values are the guest counts.</td>
+</tr>
+<tr>
+<td>componentcounts</td>
+<td>object</td>
+<td><code>{}</code></td>
+<td>Rather than specifying individual members (guests), you can specify an associative array where the keys are components (add-ons, either component name or component unique name) and values are the guest counts (for per guest add-ons) or booleans (for per reservation add-ons).</td>
 </tr>
 </tbody></table>
 
-<aside class="success">
-Remember — a happy kitten is an authenticated kitten!
-</aside>
-<h2 id='get-a-specific-kitten'>Get a Specific Kitten</h2><div class="highlight"><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
+<p>Notes:</p>
 
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-</code></pre></div><div class="highlight"><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
+<ul>
+<li>You can either specify <code>members</code> OR <code>membercounts</code> and/or <code>componentcounts</code>. Using <code>membercounts</code> and <code>componentcounts</code> are the recommended approach, unless you need to specify individual guest details.</li>
+<li>When creating or moving a reservation to a new trip, you must specify either <code>members</code> OR <code>membercounts</code> to calculate pricing.</li>
+<li>When creating a reservation, you must specify the <code>tripid</code> and the activity <code>personid</code>.</li>
+</ul>
+<h2 id='update-reservation'>Update reservation</h2>
+<p>Once created, reservations can be updated in the same format. Updates can be used to update ancillary information, as well as move reservations to new trips or change group composition.</p>
+<div class="highlight"><pre class="highlight php tab-php"><code><span class="cp">&lt;?php</span>
 
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="p">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="p">.</span><span class="n">kittens</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-</code></pre></div><div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://example.com/api/kittens/2"</span>
-  <span class="nt">-H</span> <span class="s2">"Authorization: meowmeowmeow"</span>
-</code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="kd">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">kittn</span><span class="dl">'</span><span class="p">);</span>
+<span class="k">require</span> <span class="s1">'init.i.php'</span><span class="p">;</span>
 
-<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="dl">'</span><span class="s1">meowmeowmeow</span><span class="dl">'</span><span class="p">);</span>
-<span class="kd">let</span> <span class="nx">max</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+<span class="c1">// load reservation</span>
+<span class="nv">$reservation</span> <span class="o">=</span> <span class="nx">\Tourbase\Model\Reservation\Reservation</span><span class="o">::</span><span class="na">load</span><span class="p">(</span><span class="mi">690</span><span class="p">);</span>
+
+<span class="c1">// change information</span>
+<span class="nv">$reservation</span><span class="o">-&gt;</span><span class="na">activity</span><span class="o">-&gt;</span><span class="na">personid</span> <span class="o">=</span> <span class="mi">44</span><span class="p">;</span>
+<span class="nv">$reservation</span><span class="o">-&gt;</span><span class="na">componentcounts</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s1">'Camera Rental'</span> <span class="o">=&gt;</span> <span class="mi">2</span>
+<span class="p">];</span>
+
+<span class="c1">// issue update command</span>
+<span class="nv">$reservation</span><span class="o">-&gt;</span><span class="na">update</span><span class="p">();</span>
+</code></pre></div><div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://outfitter.tourbase.com/api/rest/reservation/690"</span>
+  <span class="nt">-H</span> <span class="s2">"Authorization: Bearer token"</span>
+  <span class="nt">-H</span> <span class="s2">"Content-Type: application/json"</span>
+  <span class="nt">-X</span> PUT
+  <span class="nt">-d</span> @request.json
 </code></pre></div>
 <blockquote>
-<p>The above command returns JSON structured like this:</p>
+<p>The update function takes a JSON payload. For example:</p>
 </blockquote>
 <div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Max"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"unknown"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="w">
+    </span><span class="nl">"componentcounts"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"Camera Rental"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nl">"activity"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"personid"</span><span class="p">:</span><span class="w"> </span><span class="mi">44</span><span class="w">
+    </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div>
-<p>This endpoint retrieves a specific kitten.</p>
-
-<aside class="warning">Inside HTML code blocks like this one, you can't use Markdown, so use <code>&lt;code&gt;</code> blocks to denote code.</aside>
+<blockquote>
+<p>The above request will return the updated reservation object object.</p>
+</blockquote>
 <h3 id='http-request-2'>HTTP Request</h3>
-<p><code>GET http://example.com/kittens/&lt;ID&gt;</code></p>
+<p><code>PUT https://outfitter.tourbase.com/api/rest/reservation/&lt;id&gt;</code></p>
 <h3 id='url-parameters'>URL Parameters</h3>
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
+<th>Default</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>ID</td>
-<td>The ID of the kitten to retrieve</td>
+<td>id</td>
+<td>int</td>
+<td><em>required</em></td>
+<td>The ID of the reservation.</td>
 </tr>
 </tbody></table>
-<h2 id='delete-a-specific-kitten'>Delete a Specific Kitten</h2><div class="highlight"><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-</code></pre></div><div class="highlight"><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="p">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="p">.</span><span class="n">kittens</span><span class="p">.</span><span class="n">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-</code></pre></div><div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://example.com/api/kittens/2"</span>
-  <span class="nt">-X</span> DELETE
-  <span class="nt">-H</span> <span class="s2">"Authorization: meowmeowmeow"</span>
-</code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="kd">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">kittn</span><span class="dl">'</span><span class="p">);</span>
-
-<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="dl">'</span><span class="s1">meowmeowmeow</span><span class="dl">'</span><span class="p">);</span>
-<span class="kd">let</span> <span class="nx">max</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="k">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
-</code></pre></div>
-<blockquote>
-<p>The above command returns JSON structured like this:</p>
-</blockquote>
-<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"deleted"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">":("</span><span class="w">
+<h3 id='body-attributes-2'>Body Attributes</h3>
+<p>See the above details for the body attributes when creating a reservation.</p>
+<h3 id='response-attributes'>Response Attributes</h3>
+<p>The response returns a <a href="#reservation-object">reservation object</a>.</p>
+<h1 id='trip-type'>Trip type</h1><h2 id='trip-type-object'>Trip type object</h2><div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"businessgroupid"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"parenttripid"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"subtripstartoffset"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"starttime"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Rio Grande Float"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"shortname"</span><span class="p">:</span><span class="w"> </span><span class="s2">"RGF"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"color"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#a7194b"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"openings"</span><span class="p">:</span><span class="w"> </span><span class="mi">24</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"duration"</span><span class="p">:</span><span class="w"> </span><span class="s2">"72:00:00"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"registrationformid"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"orenable"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"orname"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"ordescription"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"ordetails"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"orimageid"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"orcutoff"</span><span class="p">:</span><span class="w"> </span><span class="s2">"168:00:00"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"orminimumguests"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"registrationcutoffdays"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"attachsameasparent"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"notes"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"accountid"</span><span class="p">:</span><span class="w"> </span><span class="mi">39</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"paymentplanid"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"cancellationpolicyid"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"createdon"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2013-10-29 12:22:00"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"modifiedon"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2018-07-30 17:18:35"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"createdbyuserid"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"deleted"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"evaluationid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"3"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"socialsite"</span><span class="p">:</span><span class="w"> </span><span class="s2">"trip"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"pricinglevels"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"parenttype"</span><span class="p">:</span><span class="w"> </span><span class="s2">"triptype"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"parentid"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Adult"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"default"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"uniquename"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Adult"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"amount"</span><span class="p">:</span><span class="w"> </span><span class="s2">"500.00"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"invoicesubitems"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"showonline"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"createdon"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2013-10-29 12:22:01"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"modifiedon"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2013-10-29 12:22:01"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"deleted"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"parenttype"</span><span class="p">:</span><span class="w"> </span><span class="s2">"triptype"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"parentid"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Youth"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"default"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"uniquename"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Youth"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"18 and under"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"amount"</span><span class="p">:</span><span class="w"> </span><span class="s2">"390.00"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"invoicesubitems"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"showonline"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"createdon"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2013-10-29 12:22:01"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"modifiedon"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2013-10-29 12:22:01"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"deleted"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">],</span><span class="w">
+    </span><span class="nl">"components"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"parenttype"</span><span class="p">:</span><span class="w"> </span><span class="s2">"triptype"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"parentid"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"T-shirt"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"uniquename"</span><span class="p">:</span><span class="w"> </span><span class="s2">"T-shirt"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"addto"</span><span class="p">:</span><span class="w"> </span><span class="s2">"member"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"optional"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"setname"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"showonline"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"onlinedescription"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Tourbase Reservations T-shirt"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"orimageid"</span><span class="p">:</span><span class="w"> </span><span class="mi">14</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"isdefault"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"price"</span><span class="p">:</span><span class="w"> </span><span class="s2">"25.00"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"accountid"</span><span class="p">:</span><span class="w"> </span><span class="mi">50</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"openings"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"inventoryitemid"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"rentalitems"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
+            </span><span class="nl">"order"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"createdon"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2013-10-29 12:22:01"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"modifiedon"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2015-05-23 12:08:08"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"deleted"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div>
-<p>This endpoint deletes a specific kitten.</p>
-<h3 id='http-request-3'>HTTP Request</h3>
-<p><code>DELETE http://example.com/kittens/&lt;ID&gt;</code></p>
-<h3 id='url-parameters-2'>URL Parameters</h3>
+<p>The <code>triptype</code> object describes an Tourbase trip type. Trip types describe a standard itinerary, and are used to create individual trips on the calendar. The trip type defines standard pricing, add-ons and information, which can then be customized on a per-trip basis.</p>
+<h3 id='attributes'>Attributes</h3>
+<p>The response returns a trip type object. </p>
+
+<table><thead>
+<tr>
+<th>Attribute</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>businessgroupid</td>
+<td>int</td>
+<td>The business group that contains the trip type.</td>
+</tr>
+<tr>
+<td>parenttripid</td>
+<td>int</td>
+<td>If this is a sub trip type, references the ID of the parent trip type. Used for selling portions of longer trips.</td>
+</tr>
+<tr>
+<td>id</td>
+<td>int</td>
+<td>A unique ID for the trip type.</td>
+</tr>
+<tr>
+<td>subtripstartoffset</td>
+<td>time or null</td>
+<td>For sub trip types, the start time offset for the sub trip.</td>
+</tr>
+<tr>
+<td>starttime</td>
+<td>time or null</td>
+<td>For parent trips, the default start time.</td>
+</tr>
+<tr>
+<td>name</td>
+<td>string</td>
+<td>The name of the trip type.</td>
+</tr>
+<tr>
+<td>shortname</td>
+<td>string</td>
+<td>Optionally, a short name for the trip type.</td>
+</tr>
+<tr>
+<td>color</td>
+<td>string</td>
+<td>The hex color associated with the trip type.</td>
+</tr>
+<tr>
+<td>openings</td>
+<td>int</td>
+<td>The number of openings for the trip type.</td>
+</tr>
+<tr>
+<td>duration</td>
+<td>time</td>
+<td>The duration of the trip.</td>
+</tr>
+<tr>
+<td>registrationformid</td>
+<td>int</td>
+<td>The registration form associated with trip type.</td>
+</tr>
+<tr>
+<td>orenable</td>
+<td>boolean</td>
+<td>Whether or not the trip accepts online reservations.</td>
+</tr>
+<tr>
+<td>orname</td>
+<td>string</td>
+<td>An alternative name to use when showing the trip type online.</td>
+</tr>
+<tr>
+<td>ordescription</td>
+<td>string</td>
+<td>An online description.</td>
+</tr>
+<tr>
+<td>ordetails</td>
+<td>string</td>
+<td>Details to show during the online booking process.</td>
+</tr>
+<tr>
+<td>orimageid</td>
+<td>int</td>
+<td>An image associated with the trip type to show online.</td>
+</tr>
+<tr>
+<td>orcutoff</td>
+<td>time</td>
+<td>The time before the trip starts that online reservations should be disabled.</td>
+</tr>
+<tr>
+<td>orminimumguests</td>
+<td>int</td>
+<td>The minimum number of guests required for booking an empty trip.</td>
+</tr>
+<tr>
+<td>registrationcutoffdays</td>
+<td>int</td>
+<td>The number of days before the trip starts to cutoff online registration.</td>
+</tr>
+<tr>
+<td>attachsameasparent</td>
+<td>bool</td>
+<td>For sub trip types, use the same attachments as the parent trip type.</td>
+</tr>
+<tr>
+<td>notes</td>
+<td>string</td>
+<td>Trip type notes.</td>
+</tr>
+<tr>
+<td>accountid</td>
+<td>int</td>
+<td>The account ID used for revenue for this trip type.</td>
+</tr>
+<tr>
+<td>paymentplanid</td>
+<td>int</td>
+<td>The payment plan associated with the trip type.</td>
+</tr>
+<tr>
+<td>socialsite</td>
+<td>string</td>
+<td>(Optional.) If present, when the social site becomes available. Either at &quot;reservation&quot; or after the &quot;trip&quot;.</td>
+</tr>
+<tr>
+<td>cancellationpolicyid</td>
+<td>int</td>
+<td>The cancellation policy associated with the trip type.</td>
+</tr>
+<tr>
+<td>evaluationid</td>
+<td>int</td>
+<td>(Optional.) The evaluation associated with the trip type.</td>
+</tr>
+<tr>
+<td>createdon</td>
+<td>datetime</td>
+<td>The creation date.</td>
+</tr>
+<tr>
+<td>modifiedon</td>
+<td>datetime</td>
+<td>The modified date.</td>
+</tr>
+<tr>
+<td>deleted</td>
+<td>bool</td>
+<td>If the trip type was deleted.</td>
+</tr>
+<tr>
+<td>pricinglevels</td>
+<td>array</td>
+<td>An array of <a href="#trip-pricing-level-object">pricing level objects</a>.</td>
+</tr>
+<tr>
+<td>components</td>
+<td>array</td>
+<td>An array of <a href="#trip-add-on-object">add-on objects</a>.</td>
+</tr>
+</tbody></table>
+<h2 id='get-trip-type-object'>Get trip type object</h2>
+<p>You can fetch a specific trip type object by ID.</p>
+<div class="highlight"><pre class="highlight php tab-php"><code><span class="cp">&lt;?php</span>
+
+<span class="k">require</span> <span class="s1">'init.i.php'</span><span class="p">;</span>
+
+<span class="nv">$trip_type</span> <span class="o">=</span> <span class="nx">\Tourbase\Model\Trip\TripType</span><span class="o">::</span><span class="na">load</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+</code></pre></div><div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://outfitter.tourbase.com/api/rest/triptype/1"</span>
+  <span class="nt">-H</span> <span class="s2">"Authorization: Bearer token"</span>
+</code></pre></div>
+<blockquote>
+<p>The above request returns a trip type object.</p>
+</blockquote>
+<h3 id='http-request'>HTTP Request</h3>
+<p><code>GET https://outfitter.tourbase.com/api/rest/triptype/&lt;id&gt;</code></p>
+<h3 id='url-parameters'>URL Parameters</h3>
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
+<th>Default</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>ID</td>
-<td>The ID of the kitten to delete</td>
+<td>id</td>
+<td>int</td>
+<td><em>required</em></td>
+<td>The ID of the trip type.</td>
 </tr>
 </tbody></table>
-<h1 id='errors'>Errors</h1>
-<aside class="notice">
-This error section is stored in a separate file in <code>includes/_errors.md</code>. Slate allows you to optionally separate out your docs into many files...just save them to the <code>includes</code> folder and add them to the top of your <code>index.md</code>'s frontmatter. Files are included in the order listed.
-</aside>
+<h3 id='response-attributes'>Response Attributes</h3>
+<p>The response returns a <a href="#trip-type-object">trip type object</a>.</p>
+<h2 id='update-trip-type-availability'>Update trip type availability</h2>
+<p>This endpoint allows you to batch update availability information for a trip type. The request includes an array of trip start dates and times. By default, Tourbase will make the necessary changes so that the trip calendar in Tourbase matches the provided list of start dates and times, including creating trips, updating openings and canceling trips.</p>
+<div class="highlight"><pre class="highlight php tab-php"><code><span class="cp">&lt;?php</span>
 
-<p>The Kittn API uses the following error codes:</p>
+<span class="k">require</span> <span class="s1">'init.i.php'</span><span class="p">;</span>
 
+<span class="nv">$trip_type</span> <span class="o">=</span> <span class="nx">\Tourbase\Model\Trip\TripType</span><span class="o">::</span><span class="na">load</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+<span class="nv">$response</span> <span class="o">=</span> <span class="nv">$trip_type</span><span class="o">-&gt;</span><span class="na">updateAvailability</span><span class="p">([</span>
+    <span class="s1">'range'</span> <span class="o">=&gt;</span> <span class="p">[</span>
+        <span class="s1">'start'</span> <span class="o">=&gt;</span> <span class="s1">'2019-03-15'</span><span class="p">,</span>
+        <span class="s1">'end'</span> <span class="o">=&gt;</span> <span class="s1">'2019-12-15'</span><span class="p">,</span>
+    <span class="p">],</span>
+    <span class="s1">'trips'</span> <span class="o">=&gt;</span> <span class="p">[</span>
+        <span class="p">[</span>
+            <span class="s1">'openings'</span> <span class="o">=&gt;</span> <span class="mi">16</span><span class="p">,</span>
+            <span class="s1">'notes'</span> <span class="o">=&gt;</span> <span class="s1">'Testing'</span>
+        <span class="p">],</span>
+        <span class="p">[</span>
+            <span class="s1">'start'</span> <span class="o">=&gt;</span> <span class="s1">'2019-05-01'</span><span class="p">,</span>
+            <span class="s1">'openings'</span> <span class="o">=&gt;</span> <span class="mi">20</span>
+        <span class="p">],</span>
+        <span class="p">[</span>
+            <span class="s1">'start'</span> <span class="o">=&gt;</span> <span class="s1">'2019-06-01'</span><span class="p">,</span>
+            <span class="s1">'openings'</span> <span class="o">=&gt;</span> <span class="mi">20</span><span class="p">,</span>
+        <span class="p">]</span>
+    <span class="p">]</span>
+<span class="p">]);</span>
+</code></pre></div><div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://outfitter.tourbase.com/api/rest/triptype/1/availability"</span>
+  <span class="nt">-H</span> <span class="s2">"Authorization: Bearer token"</span>
+  <span class="nt">-H</span> <span class="s2">"Content-Type: application/json"</span>
+  <span class="nt">-d</span> @request.json
+</code></pre></div>
+<blockquote>
+<p>The availability function takes a JSON payload. For example:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"range"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"start"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-03-15"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"end"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-06-15"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nl">"trips"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"start"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-04-01 14:00:00"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"openings"</span><span class="p">:</span><span class="w"> </span><span class="mi">16</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"notes"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Testing"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"start"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-05-01 14:00:00"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"openings"</span><span class="p">:</span><span class="w"> </span><span class="mi">20</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"start"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-06-01 13:00:00"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"openings"</span><span class="p">:</span><span class="w"> </span><span class="mi">20</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>The above request might generate the following response:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"result"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"action"</span><span class="p">:</span><span class="w"> </span><span class="s2">"create"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">743</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"action"</span><span class="p">:</span><span class="w"> </span><span class="s2">"update"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">745</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"delta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"openings"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mi">22</span><span class="p">,</span><span class="w"> </span><span class="mi">20</span><span class="p">]</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"action"</span><span class="p">:</span><span class="w"> </span><span class="s2">"update"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">747</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"action"</span><span class="p">:</span><span class="w"> </span><span class="s2">"cancel"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">749</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"start"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-07-23 00:00:00"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"has_reservations"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div><h3 id='http-request'>HTTP Request</h3>
+<p><code>POST https://outfitter.tourbase.com/api/rest/triptype/&lt;id&gt;/availability</code></p>
+<h3 id='url-parameters'>URL Parameters</h3>
 <table><thead>
 <tr>
-<th>Error Code</th>
-<th>Meaning</th>
+<th>Parameter</th>
+<th>Type</th>
+<th>Default</th>
+<th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>400</td>
-<td>Bad Request -- Your request is invalid.</td>
+<td>id</td>
+<td>int</td>
+<td><em>required</em></td>
+<td>The ID of the trip type.</td>
+</tr>
+</tbody></table>
+<h3 id='body-attributes'>Body Attributes</h3>
+<table><thead>
+<tr>
+<th>Attribute</th>
+<th>Type</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>create</td>
+<td>boolean</td>
+<td><code>true</code></td>
+<td>Trip starts in &quot;trips&quot; that do not exist in Tourbase should be created.</td>
 </tr>
 <tr>
-<td>401</td>
-<td>Unauthorized -- Your API key is wrong.</td>
+<td>update</td>
+<td>boolean</td>
+<td><code>true</code></td>
+<td>Trip starts in &quot;trips&quot; that have different availability or notes should be updated.</td>
 </tr>
 <tr>
-<td>403</td>
-<td>Forbidden -- The kitten requested is hidden for administrators only.</td>
+<td>cancel</td>
+<td>boolean</td>
+<td><code>true</code></td>
+<td>Trip starts in Tourbase that do not exist in &quot;trips&quot; should be canceled. If any trips have reservations, an alert will appear on the dashboard to notify reservationists.</td>
 </tr>
 <tr>
-<td>404</td>
-<td>Not Found -- The specified kitten could not be found.</td>
+<td>simulate</td>
+<td>boolean</td>
+<td><code>false</code></td>
+<td>If true, the update will only be simulated. The result object will return the changes that are pending.</td>
 </tr>
 <tr>
-<td>405</td>
-<td>Method Not Allowed -- You tried to access a kitten with an invalid method.</td>
+<td>range</td>
+<td>object</td>
+<td></td>
+<td>By default, the availability update will effect all trips starting now indefinitely into the future.</td>
 </tr>
 <tr>
-<td>406</td>
-<td>Not Acceptable -- You requested a format that isn&#39;t json.</td>
+<td>trips</td>
+<td>array</td>
+<td><em>required</em></td>
+<td>An array of &quot;trip&quot; objects.</td>
+</tr>
+</tbody></table>
+<h4 id='body-range-object'>Body: <code>range</code> Object</h4>
+<p>If you want to apply to the update to a specific time range, include a &quot;start&quot; and &quot;end&quot; date or date time, specifying the range to update.</p>
+
+<table><thead>
+<tr>
+<th>Attribute</th>
+<th>Type</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>start</td>
+<td>date or datetime</td>
+<td><em>required</em></td>
+<td>Start of the range to update.</td>
 </tr>
 <tr>
-<td>410</td>
-<td>Gone -- The kitten requested has been removed from our servers.</td>
+<td>end</td>
+<td>date or datetime</td>
+<td><em>required</em></td>
+<td>End of the range to update. If &quot;end&quot; is a date, it is inclusive. If &quot;end&quot; is a datetime, it is exclusive.</td>
+</tr>
+</tbody></table>
+<h4 id='body-trip-object'>Body: <code>trip</code> Object</h4>
+<p>The <code>trips</code> array contains 0 or more trips. The trip object describes when the trip starts and how many openings it has.</p>
+
+<table><thead>
+<tr>
+<th>Attribute</th>
+<th>Type</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>start</td>
+<td>date or datetime</td>
+<td><em>required</em></td>
+<td>The start date or the start date and time of the trip.</td>
 </tr>
 <tr>
-<td>418</td>
-<td>I&#39;m a teapot.</td>
+<td>openings</td>
+<td>int</td>
+<td></td>
+<td>Number of openings the trip should have.</td>
 </tr>
 <tr>
-<td>429</td>
-<td>Too Many Requests -- You&#39;re requesting too many kittens! Slow down!</td>
+<td>remainingopenings</td>
+<td>int</td>
+<td></td>
+<td>Number of openings the trip should have that are still available.</td>
 </tr>
 <tr>
-<td>500</td>
-<td>Internal Server Error -- We had a problem with our server. Try again later.</td>
+<td>notes</td>
+<td>string</td>
+<td></td>
+<td>A note about the trip.</td>
+</tr>
+</tbody></table>
+
+<p>The <code>trip</code> object can either specifying <code>openings</code> or <code>remainingopenings</code>, but not both. If neither are specified, the openings will not be changed (the default openings will be used when creating trips).</p>
+<h3 id='response-attributes'>Response Attributes</h3>
+<p>The response has a result array where each entry specifies what action was taken for the provided list of trip start dates and times. Additional result entries will be added for trips that existed in Tourbase, but were not in the provided list, and as a result were canceled.</p>
+
+<table><thead>
+<tr>
+<th>Attribute</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>results</td>
+<td>array</td>
+<td>An array of &quot;result&quot; objects.</td>
+</tr>
+</tbody></table>
+<h4 id='response-result-object'>Response: <code>result</code> Object</h4>
+<table><thead>
+<tr>
+<th>Attribute</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>action</td>
+<td>string</td>
+<td>One of &quot;create&quot; (trip created), &quot;update&quot; (trip updated), &quot;cancel&quot; (trip canceled) or &quot;nothing&quot; (if the relevant action was disabled in the request).</td>
 </tr>
 <tr>
-<td>503</td>
-<td>Service Unavailable -- We&#39;re temporarily offline for maintenance. Please try again later.</td>
+<td>id</td>
+<td>int</td>
+<td>The ID of the trip that was created, updated or canceled (not available when simulating creations).</td>
+</tr>
+<tr>
+<td>delta</td>
+<td>object</td>
+<td>An object describing the changes when updating a trip.</td>
+</tr>
+<tr>
+<td>start</td>
+<td>date or datetime</td>
+<td>The date or datetime of the trip (when canceling a trip).</td>
+</tr>
+<tr>
+<td>has_reservations</td>
+<td>boolean</td>
+<td>Whether or not a trip had reservations (when canceling a trip).</td>
+</tr>
+</tbody></table>
+<h1 id='log'>Log</h1><h2 id='query-log-entries'>Query log entries</h2><div class="highlight"><pre class="highlight php tab-php"><code><span class="cp">&lt;?php</span>
+
+<span class="k">require</span> <span class="s1">'init.i.php'</span><span class="p">;</span>
+
+<span class="c1">// not yet available via the PHP API</span>
+</code></pre></div><div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://outfitter.tourbase.com/api/rest/log?models=reservation,activity"</span>
+  <span class="nt">-H</span> <span class="s2">"Authorization: Bearer token"</span>
+  <span class="nt">-H</span> <span class="s2">"Content-Type: application/json"</span>
+</code></pre></div>
+<blockquote>
+<p>The above request might generate the following response:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"log"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"34468:6"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"timestamp"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-01-18 14:36:44"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"update"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"model"</span><span class="p">:</span><span class="w"> </span><span class="s2">"reservation"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"modelid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1456"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"delta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"deleted"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                </span><span class="kc">false</span><span class="p">,</span><span class="w">
+                </span><span class="kc">true</span><span class="w">
+            </span><span class="p">],</span><span class="w">
+            </span><span class="nl">"allocations"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                </span><span class="p">[</span><span class="w">
+                    </span><span class="mi">3264</span><span class="p">,</span><span class="w">
+                    </span><span class="mi">3265</span><span class="p">,</span><span class="w">
+                    </span><span class="mi">3266</span><span class="w">
+                </span><span class="p">],</span><span class="w">
+                </span><span class="p">[]</span><span class="w">
+            </span><span class="p">]</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="err">]</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"next"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://outfitter.tourbase.com/api/rest/log?models=reservation,activity&amp;before_id=34468:6"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<p>The <code>log</code> response contains an array of log entries describing edits that were made in Tourbase Reservations, filtering the results based on the provided query parameters. Log entries allow replaying or analyzing a set of changes. Log entries are available for 14 days, and can be queried in either ascending or descending order. </p>
+
+<p>Because only a limited number of log entries are available via the API, pagination works differently than the standard implementation in other parts of the API. The API response includes the URL to receive the next page of results.</p>
+<h3 id='url-parameters'>URL Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>models</td>
+<td>array or string</td>
+<td><em>required</em></td>
+<td>An array or comma separated string of model names desired.</td>
+</tr>
+<tr>
+<td>before</td>
+<td>datetime</td>
+<td><em>none</em></td>
+<td>If specified, will return log events that occurred on or before this time.</td>
+</tr>
+<tr>
+<td>before_id</td>
+<td>string</td>
+<td><em>none</em></td>
+<td>If specified, will return log events that occurred immediately before the log event ID.</td>
+</tr>
+<tr>
+<td>after</td>
+<td>datetime</td>
+<td><em>none</em></td>
+<td>If specified, will return log events that occurred on or after this time.</td>
+</tr>
+<tr>
+<td>after_id</td>
+<td>string</td>
+<td><em>none</em></td>
+<td>If specified, will return log events that occurred immediately after the log event ID.</td>
+</tr>
+</tbody></table>
+
+<p>If &quot;before&quot; or &quot;before_id&quot; are specified, the log entries are returned in descending order (newest to oldest). If &quot;after&quot; or &quot;after_id&quot; are specified, the log entries are returned in ascending order (oldest to newest). If neither are specified, the API returns the most recent entries in descending order.</p>
+<h3 id='attributes'>Attributes</h3>
+<p>The log entry object includes the following attributes.</p>
+
+<table><thead>
+<tr>
+<th>Attribute</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>log</td>
+<td>array</td>
+<td>An array of <a href="#log-entry-object">log entry objects</a></td>
+</tr>
+<tr>
+<td>next</td>
+<td>string or null</td>
+<td>If applicable, the API URL to generate the next page of log entries.</td>
+</tr>
+</tbody></table>
+<h2 id='log-entry-object'>Log entry object</h2><div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"34468:6"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"timestamp"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-01-18 14:36:44"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"update"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"model"</span><span class="p">:</span><span class="w"> </span><span class="s2">"reservation"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"modelid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1456"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"delta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"deleted"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="kc">false</span><span class="p">,</span><span class="w">
+            </span><span class="kc">true</span><span class="w">
+        </span><span class="p">],</span><span class="w">
+        </span><span class="nl">"allocations"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">[</span><span class="w">
+                </span><span class="mi">3264</span><span class="p">,</span><span class="w">
+                </span><span class="mi">3265</span><span class="p">,</span><span class="w">
+                </span><span class="mi">3266</span><span class="w">
+            </span><span class="p">],</span><span class="w">
+            </span><span class="p">[]</span><span class="w">
+        </span><span class="p">]</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<p>The <code>log</code> object describes a set of changes to a model. </p>
+<h3 id='attributes-2'>Attributes</h3>
+<p>The log entry object includes the following attributes.</p>
+
+<table><thead>
+<tr>
+<th>Attribute</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>string</td>
+<td>A unique ID for the log entry, composed of two numbers separated by a colon.</td>
+</tr>
+<tr>
+<td>timestamp</td>
+<td>datetime</td>
+<td>The time when the event occurred.</td>
+</tr>
+<tr>
+<td>type</td>
+<td>string</td>
+<td>Describes the type of changes made. Specifically: &quot;create&quot; if the model was created, &quot;update&quot; if an existing model was updated, &quot;remove&quot; if an existing model was deleted, or &quot;note&quot; for other events.</td>
+</tr>
+<tr>
+<td>model</td>
+<td>string</td>
+<td>The type of model.</td>
+</tr>
+<tr>
+<td>modelid</td>
+<td>int</td>
+<td>The unique ID of the model.</td>
+</tr>
+<tr>
+<td>delta</td>
+<td>object</td>
+<td>(Optional.) For &quot;update&quot; events, this object describes the changes that were made to the model.</td>
 </tr>
 </tbody></table>
 
       </div>
       <div class="dark-box">
           <div class="lang-selector">
+                <a href="#" data-language-name="php">php</a>
                 <a href="#" data-language-name="shell">shell</a>
-                <a href="#" data-language-name="ruby">ruby</a>
-                <a href="#" data-language-name="python">python</a>
-                <a href="#" data-language-name="javascript">javascript</a>
           </div>
       </div>
     </div>
