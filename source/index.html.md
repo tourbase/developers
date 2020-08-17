@@ -30,6 +30,6 @@ search: true
 
 Tourbase Reservations offers a REST API that allows reading and writing information from installations. You can use the API to connect third party software, develop custom tools or build additional website integration.
 
-We have a flexible [PHP implementation of the API](https://github.com/tourbase/arctic-api), but the documentation provides more general instructions should you want to implement a custom implementation or use a different language.
+We have a flexible [PHP implementation of the API](https://github.com/tourbase/library), but the documentation provides more general instructions should you want to implement a custom implementation or use a different language.
 
 This documentation is a new project, and is in the early stages. More information will be added soon.
